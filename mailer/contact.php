@@ -58,7 +58,7 @@ try {
     $mail->addAttachment("images/".$file_name);
    
     $mail->setFrom('rohit.webclickindia@gmail.com', 'Mailer');
-    $mail->addAddress('info@indygreentech.com', 'Rohit');     
+    $mail->addAddress('xyz@gmail.com', 'Rohit');     
 
 
    
