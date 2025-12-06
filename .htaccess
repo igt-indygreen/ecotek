@@ -1,6 +1,6 @@
 RewriteEngine On
 RewriteCond %{HTTP_HOST} !^www\. [NC]
-RewriteRule ^(.*)$ https://www.indygreentech.com/$1 [L,R=301]
+RewriteRule ^(.*)$ https://www.ecoteksolutions.ca/$1 [L,R=301]
 
 <IfModule mod_expires.c>
     ExpiresActive On

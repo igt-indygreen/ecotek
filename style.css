@@ -9,7 +9,7 @@ li{padding: 0px; margin: 0px; font-size: 16px;  font-family:arial; }
 a{font-size: 14px;   font-family: arial; }
 a:hover{text-decoration: none;}
 p{font-size: 16px; padding: 0px; margin: 0px;   font-family:arial; text-align: justify;}
-body{padding: 0px; margin: 0px; box-sizing: content-box;}
+body{padding: 0px; margin: 0px; box-sizing: content-box; background-color: #000;}
 span{padding: 0px; margin: 0px;   font-family: arial; }
 input{ font-family: arial; }
 textarea{ font-family: arial; }
@@ -259,7 +259,7 @@ span.modal-title {  display: block;    text-align: center;    width: 100%;    fo
 .testimonial-slider .slick-next:hover{background-image: -webkit-linear-gradient( 0deg, rgb(225,125,66) 0%, rgb(251,109,40) 100%);}
 .testimonial-slider .slick-prev:hover{background-image: -webkit-linear-gradient( 0deg, rgb(225,125,66) 0%, rgb(251,109,40) 100%);}
 img.set-as { position: absolute;  right: 0;    top: 37px; width: 15%;    bottom: 0;}
-.sticky.fixed{   position: fixed;    top: 0;    box-shadow: 5px 0px 5px #ccc;    background-color: #fff;    transition:all 200s;    z-index: 999;    width: 100%;    transition: 0.5s;}
+.sticky.fixed{   position: fixed;    top: 0;    box-shadow: 5px 0px 5px #ccc;    background-color: #000000;    transition:all 200s;    z-index: 999;    width: 100%;    transition: 0.5s;}
 ul.dropdown-menu li:hover {    background: #8ec649;}
 .section-2__wrapper.mb-30 h1 {    color: #8ec649;}
 .section-title h2 { color: #8ec649; }
@@ -300,9 +300,8 @@ p.text-block {    color: #000;}
 .blue-color{    padding: 70px 25px !important;}
 .green-color{   padding: 100px 25px !important;}
 */
-.quick_links{background: url(img/water-mark.png)no-repeat; background-size: contain; background-position: 50% 50%;}
 .features-area  {    padding: 100px 0;    background-attachment: fixed !important;    background-size: cover !important;}
-.quick_links ul li a {    color: #0c599f !important;}
+.quick_links ul li a {    color: #fff !important;}
 .system h4 {    font-size: 20px;}
 .system .bg-white {    min-height: 325px;}
 .system h4{color: #8ec649;}
@@ -567,7 +566,10 @@ nav.navbar.navbar-expand-md.navbar-light.mobile-menu {    display: none;}
 color.orange{color: #ff8042;}
 
 
-
+.card-body 
+{
+  background-color: #fff;
+}
  .product-card {
       border: none;
       border-radius: 20px;
