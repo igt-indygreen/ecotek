@@ -141,7 +141,7 @@ color {    color: #0c599f;}
 .green{color: #82c85c;}
 /*Project*/
 .project-section-two{	position: relative;	background-color: #f2f3f5;	padding: 120px 0 0;overflow:hidden;}
-.project-section-two.style-two:before {    position: absolute;    left: 0;    top: 0;    height: 100%;    width: 100%;    background-color: #ffffff;    content: "";    opacity: .60;}
+.project-section-two.style-two:before {    position: absolute;    left: 0;    top: 0;    height: 100%;    width: 100%;    background-color: #000000;    content: "";}
 .project-section-two .projects-outer{	position: relative;	background-repeat: no-repeat;	background-position: center;	background-size: cover;}
 .project-section-two .projects-outer:before{	position: absolute;	left: 0;	top: 0;	height: 100%;	width: 100%;	background-color: #1a1f26;	content: '';	opacity: .40;}
 .project-block-four{	position: relative;}
@@ -263,7 +263,7 @@ img.set-as { position: absolute;  right: 0;    top: 37px; width: 15%;    bottom:
 ul.dropdown-menu li:hover {    background: #8ec649;}
 .section-2__wrapper.mb-30 h1 {    color: #8ec649;}
 .section-title h2 { color: #8ec649; }
-.section-title h5 { color: #8ec649; text-decoration: underline;  text-underline-position: from-font;text-decoration-color: #0c599f;text-decoration-style: solid; text-decoration-thickness: from-font;}
+.section-title h5 { color: #8ec649; text-decoration: none;  text-underline-position: from-font;text-decoration-color: #0c599f;text-decoration-style: solid; text-decoration-thickness: from-font;}
 .section-title h3 { color: #8ec649; }
 .section-title h4 { color: #8ec649; text-decoration: underline;  text-underline-position: from-font;text-decoration-color: #0c599f;text-decoration-style: solid; text-decoration-thickness: from-font;}
 .sec-title h2 {    color: #8ec649; text-decoration: underline;  text-underline-position: from-font; text-decoration-color: #0c599f;text-decoration-style: solid; text-decoration-thickness: from-font;}
@@ -288,13 +288,30 @@ ul.dropdown-menu li:hover {    background: #8ec649;}
 /* icon */
 .lnr-wrapper{ margin-top: 20px }
 .lnr-heart, .lnr-code, .lnr-bicycle, .lnr-history { color: #019F9A; font-size: 45px; }
-.counter{background: #fd651a;    background: -moz-linear-gradient(left, #fd651a 0%, #fb6529 24%, #f3635c 76%, #f1636c 100%);    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#fd651a), color-stop(24%,#fb6529), color-stop(76%,#f3635c), color-stop(100%,#f1636c));    background: -webkit-linear-gradient(left, #fd651a 0%,#fb6529 24%,#f3635c 76%,#f1636c 100%);    background: -o-linear-gradient(left, #fd651a 0%,#fb6529 24%,#f3635c 76%,#f1636c 100%);    background: -ms-linear-gradient(left, #fd651a 0%,#fb6529 24%,#f3635c 76%,#f1636c 100%);    background: linear-gradient(to right, #fd651a 0%,#fb6529 24%,#f3635c 76%,#f1636c 100%);    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fd651a', endColorstr='#f1636c',GradientType=1 );}.why-choose-area ul li {    width: 24%; margin: 0px auto;}
+.counter {
+  background: #4a7f1f;
+  background: -moz-linear-gradient(left, #4a7f1f 0%, #5a9627 40%, #6fae32 70%, #8ec649 100%);
+  background: -webkit-gradient(linear, left top, right top, 
+              color-stop(0%,#4a7f1f), color-stop(40%,#5a9627), 
+              color-stop(70%,#6fae32), color-stop(100%,#8ec649));
+  background: -webkit-linear-gradient(left, #4a7f1f 0%, #5a9627 40%, #6fae32 70%, #8ec649 100%);
+  background: -o-linear-gradient(left, #4a7f1f 0%, #5a9627 40%, #6fae32 70%, #8ec649 100%);
+  background: -ms-linear-gradient(left, #4a7f1f 0%, #5a9627 40%, #6fae32 70%, #8ec649 100%);
+  background: linear-gradient(to right, #4a7f1f 0%, #5a9627 40%, #6fae32 70%, #8ec649 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4a7f1f', endColorstr='#8ec649',GradientType=1);
+}
+
+.why-choose-area ul li {
+  width: 24%;
+  margin: 0px auto;
+}
+
 .why-choose-area span {    color: #8ec649; font-size: 16px; font-weight: bold;}
 .under-border-div {    border: 1px solid #ccc;  border-radius: 50px;     width: 100px; height: 100px;     margin: 0px auto;}
 .under-border-div img {    width: 55%;    position: relative;    top: 22px;}
 .under-border-div:hover {background-color: #8ec649;}
 .why-choose-area{background: url(img/bg-img.jpg)no-repeat; background-attachment: fixed; background-size: cover;}
-p.text-block {    color: #000;}
+p.text-block {    color: #ffffff;}
 /*.btn-box ul li {    width: 47%;}*/
 /*.orange-color {    padding: 100px 25px !important;}
 .blue-color{    padding: 70px 25px !important;}
