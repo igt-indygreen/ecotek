@@ -609,21 +609,21 @@ color.orange{color: #ff8042;}
     .btn-custom {
       border-radius: 50px;
       padding: 8px 20px;
-      background: linear-gradient(135deg, #ff7e5f, #feb47b);
+      background: linear-gradient(135deg, #8ec649, #589310);
       color: #fff;
       font-weight: 600;
       border: none;
       transition: 0.3s ease;
     }
     .btn-custom:hover {
-      background: linear-gradient(135deg, #feb47b, #ff7e5f);
+      background: linear-gradient(135deg, #8ec649, #589310);
       color: #fff;
       transform: scale(1.05);
     }
         .btn-customus {
       border-radius: 50px;
       padding: 8px 20px;
-      background: linear-gradient(135deg, #ff7e5f, #feb47b);
+      background: linear-gradient(135deg, #8ec649, #589310);
       color: #fff;
       font-weight: 600;
       width: 100%;
@@ -631,7 +631,7 @@ color.orange{color: #ff8042;}
       transition: 0.3s ease;
     }
     .btn-customus:hover {
-      background: linear-gradient(135deg, #feb47b, #ff7e5f);
+      background: linear-gradient(135deg, #8ec649, #589310);
       color: #fff;
       transform: scale(1.05);
     }
@@ -683,8 +683,9 @@ color.orange{color: #ff8042;}
     {
         font-size: 30px;
         border-radius: 10px 0 0 10px;
-        border-bottom:3px solid #ff8042;
-        border-left:3px solid #ff8042;
+        border-bottom:3px solid #8ec649;
+        border-left:3px solid #8ec649;
+        color: #8ec649;
         width: fit-content;
         padding-left: 10px;
     }
@@ -692,10 +693,14 @@ color.orange{color: #ff8042;}
     {
         font-size: 24px;
         border-radius: 10px 0 0 10px;
-        border-bottom:3px solid #ff8042;
-        border-left:3px solid #ff8042;
+        border-bottom:3px solid #8ec649;
+        border-left:3px solid #8ec649;
         width: fit-content;
         padding-left: 10px;
+    }
+    .product-description p
+    {
+        color: white;
     }
 }
 @media  (min-width:769px) and (max-width:1440px)
@@ -844,13 +849,19 @@ color.orange{color: #ff8042;}
     {
         font-size: 24px;
         border-radius: 10px;
-        border-left:2px solid #ff8042;
+        border-left:2px solid #8ec649;
+        color: #8ec649;
     }
     .product-description h3
     {
         font-size: 16px;
         border-radius: 10px;
-        border-left:2px solid #ff8042;
+        border-left:2px solid #8ec649;
+        color: #8ec649;
+    }
+    .product-description p
+    {
+        color: white;
     }
 
  .product-card {
@@ -1038,10 +1049,14 @@ color.orange{color: #ff8042;}
 
 
     .highlight {
-        background-color: #d1f7e1;
+        background-color: #8ec649;
         font-weight: 600;
         padding: 3px 6px;
         border-radius: 4px;
+    }
+    .highlight p 
+    {
+        color: #fff;
     }
 
     @media (max-width: 768px) {
@@ -1352,10 +1367,10 @@ color.orange{color: #ff8042;}
 
    .cell-tech h3 {
       font-size: 1.5rem;
-      color: #1a5c3e;
+      color: #8ec649;
       text-align: center;
       margin-bottom: 15px;
-      border-bottom: 3px solid #1a5c3e;
+      border-bottom: 3px solid #8ec649;
       display: inline-block;
       padding-bottom: 5px;
     }
@@ -1364,7 +1379,7 @@ color.orange{color: #ff8042;}
       line-height: 1.7;
       font-size: 1rem;
       margin-bottom: 20px;
-      color: #444;
+      color: #fff;
     }
     .bess 
     {
@@ -1383,6 +1398,7 @@ color.orange{color: #ff8042;}
       position: relative;
       padding-left: 30px;
       margin-bottom: 10px;
+      color: whitesmoke;
       font-weight: 500;
     }
 
@@ -1390,7 +1406,7 @@ color.orange{color: #ff8042;}
       content: "•";
       position: absolute;
       left: 10px;
-      color: #1a5c3e;
+      color: #8ec649;
       font-size: 1.2rem;
     }
 
@@ -1403,9 +1419,9 @@ color.orange{color: #ff8042;}
     }
 
     .highlight {
-      background-color: #eaf6f0;
+      background-color: #8ec649;
       padding: 15px;
-      border-left: 4px solid #1a5c3e;
+      border-left: 4px solid #ffffff;
       border-radius: 8px;
       margin-top: 15px;
     }
@@ -1489,7 +1505,7 @@ color.orange{color: #ff8042;}
     position: relative;
     width: 100px;
     height: 100px;
-    background-color: #2ecc71; /* Green circle */
+    background-color: #8ec649; /* Green circle */
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -1497,14 +1513,14 @@ color.orange{color: #ff8042;}
     color: #fff;
     font-size: 20px;
     font-weight: bold;
-    box-shadow: 0 0 0 0 rgba(255,165,0, 0.6);
+    box-shadow: 0 0 0 0 rgb(255, 255, 255);
     animation: popup 2s ease-in-out infinite;
   }
 
   @keyframes popup {
     0% {
       transform: scale(1);
-      box-shadow: 0 0 0 0 rgba(255,165,0, 0.5);
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
     }
     50% {
       transform: scale(1.15);
