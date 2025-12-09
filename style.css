@@ -319,6 +319,7 @@ p.text-block {    color: #ffffff;}
 */
 .features-area  {    padding: 100px 0;    background-attachment: fixed !important;    background-size: cover !important;}
 .quick_links ul li a {    color: #fff !important;}
+.quick_links ul li a:hover {    color: #8ec649 !important;}
 .system h4 {    font-size: 20px;}
 .system .bg-white {    min-height: 325px;}
 .system h4{color: #8ec649;}
@@ -695,18 +696,29 @@ color.orange{color: #ff8042;}
         border-radius: 10px 0 0 10px;
         border-bottom:3px solid #8ec649;
         border-left:3px solid #8ec649;
+        color: #8ec649;
         width: fit-content;
         padding-left: 10px;
+    }
+    .product-description h6
+    {
+        
+        color: #8ec649;
+       
     }
     .product-description p
     {
         color: white;
     }
 }
+.greeny {
+  color: #8ec649;
+}
 @media  (min-width:769px) and (max-width:1440px)
 {
     .welcome_side p {    font-size: 10px;}
 .welcome_side a {    font-size: 16px;}
+
 }
 @media only screen and (max-width:768px)
 {
@@ -738,6 +750,7 @@ color.orange{color: #ff8042;}
     text-decoration: underline;
     color: #8ec649;
 }
+
 .about
 {
     display: flex;
@@ -1016,7 +1029,6 @@ color.orange{color: #ff8042;}
         max-width: 100%;
         margin: auto;
         background: #fff;
-        padding: 40px 50px;
     }
 
     .application-section h1 {
@@ -1028,7 +1040,7 @@ color.orange{color: #ff8042;}
 
     .application-section h2 {
         color: #004d26;
-        border-left: 5px solid #00a859;
+        border-left: 5px solid #8ec649;
         padding-left: 10px;
         margin-top: 40px;
         margin-bottom: 15px;
@@ -1088,7 +1100,7 @@ color.orange{color: #ff8042;}
 
 
 .app h2 {
-        color: #004d26;
+        color: #82c85c;
         padding-left: 10px;
         margin-top: 40px;
         margin-bottom: 15px;
@@ -1098,7 +1110,7 @@ color.orange{color: #ff8042;}
 
 .app p {
   text-align: center;
-  color: #555;
+  color: #fff;
   font-size: 1.05em;
   margin-bottom: 40px;
 }
@@ -1178,7 +1190,7 @@ color.orange{color: #ff8042;}
   }
   .app h2 {
     font-size: 1.6em;
-     border-left: 5px solid #00a859;
+     border-left: 5px solid #8ec649;
      text-align: left;
      text-decoration: none;
   }
@@ -1197,7 +1209,7 @@ color.orange{color: #ff8042;}
 
 .why-choose h2 {
   font-size: 2em;
-  color: #006837;
+  color: #82c85c;
   font-weight: 600;
   margin-bottom: 25px;
   position: relative;
@@ -1208,7 +1220,7 @@ color.orange{color: #ff8042;}
   display: block;
   width: 80px;
   height: 3px;
-  background: #00a859;
+  background: #8ec649;
   margin: 10px auto 0;
   border-radius: 2px;
 }
@@ -1225,7 +1237,7 @@ color.orange{color: #ff8042;}
   color: #004d26;
   padding: 14px 20px;
   margin: 10px 0;
-  border-left: 5px solid #00a859;
+  border-left: 5px solid #8ec649;
   border-radius: 8px;
   font-size: 1.05em;
   font-weight: 500;
@@ -1237,7 +1249,7 @@ color.orange{color: #ff8042;}
 
 .why-choose ul li::before {
   content: "✔";
-  color: #00a859;
+  color: #8ec649;
   font-weight: bold;
   font-size: 1.1em;
 }
@@ -1245,6 +1257,7 @@ color.orange{color: #ff8042;}
 .why-choose ul li:hover {
   background: #e7f7ed;
   transform: translateX(8px);
+  color: #8ec649;
 }
 
 /* Responsive Design */
@@ -1276,20 +1289,24 @@ color.orange{color: #ff8042;}
   position: relative;
   padding-left: 28px;
   transition: all 0.3s ease;
+  color: #fff;
 }
-
+.product-description  h4
+{
+  color:#82c85c;
+}
 .product-description ul li::before {
   content: "✔"; /* You can replace this with another symbol or icon */
   position: absolute;
   left: 0;
   top: 0;
-  color: #00a859; /* Ecotek Solutions’s signature green tone */
+  color: #8ec649; /* Ecotek Solutions’s signature green tone */
   font-size: 16px;
   font-weight: bold;
 }
 
 .product-description ul li:hover {
-  color: #00723f; /* Slightly darker on hover */
+  color: #8ec649; /* Slightly darker on hover */
   transform: translateX(5px);
   cursor: default;
 }
@@ -1401,7 +1418,10 @@ color.orange{color: #ff8042;}
       color: whitesmoke;
       font-weight: 500;
     }
-
+    .cell-tech h2 
+    {
+      color: #8ec649;
+    }
    .cell-tech ul li::before {
       content: "•";
       position: absolute;
@@ -1412,7 +1432,7 @@ color.orange{color: #ff8042;}
 
     .sub-heading {
       font-size: 1.3rem;
-      color: #1a5c3e;
+      color: #82c85c;
       margin-top: 30px;
       border-left: 4px solid #1a5c3e;
       padding-left: 10px;
@@ -1435,6 +1455,7 @@ color.orange{color: #ff8042;}
       position: relative;
       padding-left: 30px;
       margin-bottom: 10px;
+      color: whitesmoke;
       font-weight: 500;
     }
 
@@ -1469,6 +1490,7 @@ color.orange{color: #ff8042;}
       }
       h2 {
         font-size: 1.6rem;
+        color: #8ec649;
       }
       .sub-heading {
         font-size: 1.1rem;
