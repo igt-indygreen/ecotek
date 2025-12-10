@@ -52,9 +52,7 @@
 </head>
 <body>
      
-<div id="preloader">
-    <img src="favicon.ico" loading="lazy" alt="Loading..." class="loader-icon">
-  </div> 
+
 <!-- main -->
 <main>
 <section class="top-header py-2">
@@ -101,7 +99,7 @@
 <div class="row">
 
 <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-xs-12 logo_side align-self-center">
-<a href="index.html" title="ECOTEK SOLUTIONS"><h6 style="color:#8ec649;">ECOTEK SOLUTIONS</h6></a>
+<a href="index.html"  class="logo-name" title="ECOTEK SOLUTIONS"><h6 style="color:#8ec649;">ECOTEK <br> SOLUTIONS</h6></a>
 </div>
 
 <div class="col-xl-10 col-lg-10 col-md-10 col-sm-12 col-xs-12 nave_side align-self-center">
@@ -353,99 +351,97 @@
 </section>
 
 
-<!-- Slider -->
 <section class="slider slider-item w-100">
 <div class="item">
-<div class="hero-slider-1">
-<div class="overlay-side"></div>
-<div class="col-md-8 slider-caption text-center">
-<span class="text-white text-uppercase wow fadeInUp"> Turnkey Solutions <br> <color class="orange"> for  GW Scale </color><br>Solar PV Panel Production Lines</span>
-<p class="wow fadeInUp text-center">Few MWs of SemiAuto Lines to GW scale Fully Auto Production lines</p>
+  <div class="hero" aria-roledescription="carousel" aria-label="Featured items">
+  <div class="hero__viewport" id="heroViewport">
+    <div class="slides" id="slides" style="transform:translateX(0%)" aria-live="off">
 
-<!-- <ul class="btn-list wow fadeInUp mt-4">
-<li class="list-inline-item"><a href="#" class="text-white font-weight-bold orange_btn">Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-</a></li>
+      <!-- Slide 1 -->
+      <section class="slide" aria-roledescription="slide" aria-label="Slide 1">
+        <div class="slide__media" aria-hidden="true">
+          <picture>
+            <!-- WebP sources (preferred) -->
+            <source type="image/webp" srcset="
+              https://picsum.photos/id/1018/800/450.webp 800w,
+              https://picsum.photos/id/1018/1400/788.webp 1400w,
+              https://picsum.photos/id/1018/2200/1235.webp 2200w" sizes="(max-width:600px) 100vw, (max-width:1200px) 80vw, 1400px">
+            <!-- Fallback/jpeg -->
+            <img src="https://picsum.photos/id/1018/1400/788.jpg"
+                 srcset="https://picsum.photos/id/1018/800/450.jpg 800w, https://picsum.photos/id/1018/1400/788.jpg 1400w, https://picsum.photos/id/1018/2200/1235.jpg 2200w"
+                 sizes="(max-width:600px) 100vw, (max-width:1200px) 80vw, 1400px"
+                 alt="Solar production line" loading="lazy">
+          </picture>
+        </div>
 
-<li class="list-inline-item"><a href="#" class="text-white font-weight-bold green-btn">Contact Us <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-</a></li>
+        <div class="slide__content">
+          <h2 class="h-title">Power your future with solar manufacturing</h2>
+          <p class="h-sub">End-to-end PV & battery production — scalable, efficient, certified.</p>
+          <div>
+          <a href="#"><button class="button"><svg viewBox="0 0 16 16" class="bi bi-lightning-charge-fill" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0  364-.843l8-8.5a.5.5 0 0 1 .615-.09z"></path></svg>button</button></a>
+        </div>
 
-</ul> -->
+        </div>
+      </section>
+
+      <!-- Slide 2 -->
+      <section class="slide" aria-roledescription="slide" aria-label="Slide 2">
+        <div class="slide__media" aria-hidden="true">
+          <picture>
+            <source type="image/webp" srcset="
+              https://picsum.photos/id/1003/800/450.webp 800w,
+              https://picsum.photos/id/1003/1400/788.webp 1400w,
+              https://picsum.photos/id/1003/2200/1235.webp 2200w" sizes="(max-width:600px) 100vw, (max-width:1200px) 80vw, 1400px">
+            <img src="https://picsum.photos/id/1003/1400/788.jpg"
+                 srcset="https://picsum.photos/id/1003/800/450.jpg 800w, https://picsum.photos/id/1003/1400/788.jpg 1400w, https://picsum.photos/id/1003/2200/1235.jpg 2200w"
+                 sizes="(max-width:600px) 100vw, (max-width:1200px) 80vw, 1400px"
+                 alt="Testing lab" loading="lazy">
+          </picture>
+        </div>
+
+        <div class="slide__content">
+          <h2 class="h-title">Reliable testing for long-life panels</h2>
+          <p class="h-sub">Accelerated aging, IV curve, and thermal stress testing — all under one roof.</p>
+           <a href="#"><button class="button"><svg viewBox="0 0 16 16" class="bi bi-lightning-charge-fill" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0  364-.843l8-8.5a.5.5 0 0 1 .615-.09z"></path></svg>button</button></a>
+        </div>
+      </section>
+
+      <!-- Slide 3 -->
+      <section class="slide" aria-roledescription="slide" aria-label="Slide 3">
+        <div class="slide__media" aria-hidden="true">
+          <picture>
+            <source type="image/webp" srcset="
+              https://picsum.photos/id/1040/800/450.webp 800w,
+              https://picsum.photos/id/1040/1400/788.webp 1400w,
+              https://picsum.photos/id/1040/2200/1235.webp 2200w" sizes="(max-width:600px) 100vw, (max-width:1200px) 80vw, 1400px">
+            <img src="https://picsum.photos/id/1040/1400/788.jpg"
+                 srcset="https://picsum.photos/id/1040/800/450.jpg 800w, https://picsum.photos/id/1040/1400/788.jpg 1400w, https://picsum.photos/id/1040/2200/1235.jpg 2200w"
+                 sizes="(max-width:600px) 100vw, (max-width:1200px) 80vw, 1400px"
+                 alt="Battery automation" loading="lazy">
+          </picture>
+        </div>
+
+        <div class="slide__content">
+          <h2 class="h-title">Automated battery assembly</h2>
+          <p class="h-sub">From cell sorting to final pack testing — industrial automation that scales.</p>
+           <a href="#"><button class="button"><svg viewBox="0 0 16 16" class="bi bi-lightning-charge-fill" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0  364-.843l8-8.5a.5.5 0 0 1 .615-.09z"></path></svg>button</button></a>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <div class="controls" aria-hidden="false">
+    <button class="control-btn" id="prevBtn" aria-label="Previous slide">&larr;</button>
+    <button class="control-btn" id="nextBtn" aria-label="Next slide">&rarr;</button>
+  </div>
+
+  <!-- Indicators -->
+  <div class="indicators" role="tablist" aria-label="Slide indicators" id="indicators"></div>
 </div>
-</div>
-</div>
-
-
-<div class="item">
-<div class="hero-slider-2">
-<div class="overlay-side"></div>
-<div class="col-md-8 slider-caption text-center">
-<span class="text-white text-uppercase wow fadeInUp"> Lets Go <color class="orange">Lithium  </color> <br> </span>
-<p class="wow fadeInUp text-center">Technology Solutions for Li Cells & Battery Pack Production Lines</p>
-
-<!-- <ul class="btn-list wow fadeInUp mt-4">
-<li class="list-inline-item"><a href="#" class="text-white font-weight-bold orange_btn">Contact Us <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-</a></li>
-
-<li class="list-inline-item"><a href="#" class="text-white font-weight-bold green-btn">Contact Us <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-</a></li>
-
-</ul> -->
-</div>
-</div>
-</div>
-
-
-<div class="item">
-<div class="hero-slider-4">
-<div class="overlay-side"></div>
-<div class="col-md-8 slider-caption text-center">
-<span class="text-white text-uppercase wow fadeInUp"> Lets Drive  <color class="orange"> The Future </color>   </span>
-<p class="wow fadeInUp text-center"> Emobility & Electric Infrastructure Solutions</p>
-
-
-
-<!-- <ul class="btn-list wow fadeInUp mt-4">
-<li class="list-inline-item"><a href="#" class="text-white font-weight-bold orange_btn">Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-</a></li>
-
-<li class="list-inline-item"><a href="#" class="text-white font-weight-bold green-btn">Contact Us <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-</a></li>
-
-</ul> -->
-</div>
-</div>
-</div>
-
-
-<div class="item">
-<div class="hero-slider-5">
-<div class="overlay-side"></div>
-
-<div class="col-md-8 slider-caption text-center">
-<span class="text-white text-uppercase wow fadeInUp"><color class="orange"> Lithium Battery Separator <br> Production Lines</color></span>
-<p class="wow fadeInUp text-center">Turnkey Solutions for Li-BSF Production Lines</p>
-
-<!-- <ul class="btn-list wow fadeInUp mt-4">
-<li class="list-inline-item"><a href="#" class="text-white font-weight-bold orange_btn">Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-</a></li>
-
-<li class="list-inline-item"><a href="#" class="text-white font-weight-bold green-btn">Contact Us <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-</a></li>
-
-</ul> -->
-</div>
-</div>
-</div>
-
-<!-- <div class="hero-slider">
-<div class="video-overlap">
-<video muted="" autoplay="" loop="loop" poster="/" playsinline="" id="vid">
-<source src="img/video.mp4" data-video="img/video.mp4" class="w-100" type="video/mp4">
-Your browser does not support the video tag.
-</video>
-</div>
-</div> -->
-</section>
+  </div>
+  </section>
 <!-- tag-line-marqies -->
 <div class="tag-line-marquee align-self-center pt-1 pb-1">
 <marquee attribute_name="attribute_value"....more attributes scrollamount="15">

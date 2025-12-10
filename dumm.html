@@ -1,0 +1,316 @@
+<!-- hero-slider-responsive.html -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Responsive Hero Slider</title>
+<style>
+  :root{
+    --gap: 24px;
+    --radius: 12px;
+    --transition: 600ms cubic-bezier(.22,.9,.27,1);
+    --dot-size: 10px;
+  }
+  *{box-sizing:border-box}
+  body{font-family:Inter, system-ui, Arial; margin:0; background:#f3f4f6; color:#111}
+  .hero {position:relative; width:100%; max-width:100%; margin:28px auto; overflow:hidden; ; background:#111;}
+  /* fluid viewport height: min 320px, ideal 55vh, max 780px */
+  .hero__viewport {height:clamp(520px, 55vh, 780px); position:relative; touch-action:pan-y; background:#000;}
+  .slides {display:flex; height:100%; transition:transform var(--transition); will-change:transform;}
+  .slide {min-width:100%; position:relative; display:flex; align-items:flex-end; padding: clamp(16px, 3.5vw, 48px); color:white;}
+  /* responsive image fills slide */
+  .slide__media {position:absolute; inset:0; display:block; overflow:hidden;}
+  .slide__media img{width:100%; height:100%; object-fit:cover; display:block; filter:brightness(.55); transition:transform .8s ease;}
+  .slide__content {position:relative; z-index:2; max-width:760px; margin-bottom:clamp(12px, 3vh, 48px)}
+  .h-title {font-size:clamp(1.5rem, 3.6vw, 3rem); margin:0 0 .4rem; line-height:1.03}
+  .h-sub {font-size:clamp(.92rem, 1.6vw, 1.15rem); margin:0 0 1rem; opacity:.95}
+  .btn {display:inline-block; padding:.65rem 1rem; border-radius:10px; background:#ff7a18; color:white; text-decoration:none; font-weight:600}
+  /* controls */
+  .controls {position:absolute; top:50%; transform:translateY(-50%); width:100%; display:flex; justify-content:space-between; z-index:3; pointer-events:none}
+  .control-btn {pointer-events:auto; background:rgba(0,0,0,.36); border:0; color:white; width:44px; height:44px; border-radius:8px; display:flex; align-items:center; justify-content:center; margin:0 8px; cursor:pointer}
+  /* indicators */
+  .indicators {position:absolute; left:50%; transform:translateX(-50%); bottom:12px; display:flex; gap:8px; z-index:3}
+  .dot {width:var(--dot-size); height:var(--dot-size); border-radius:50%; background:rgba(255,255,255,.45); border:0; cursor:pointer}
+  .dot[aria-pressed="true"]{background:white; box-shadow:0 2px 8px rgba(0,0,0,.25)}
+  /* hover effect for large screens */
+  .slide:hover .slide__media img {transform:scale(1.03)}
+  /* keyboard focus */
+  .control-btn:focus,.dot:focus,.btn:focus{outline:3px solid rgba(255,122,24,.25); outline-offset:2px}
+  /* layout tweak for very small screens */
+  @media (max-width:420px){
+    .h-title {font-size:clamp(1.15rem, 6.5vw, 1.6rem)}
+    .hero {margin:12px}
+    .control-btn{width:40px;height:40px}
+  }
+</style>
+</head>
+<body>
+
+<div class="hero" aria-roledescription="carousel" aria-label="Featured items">
+  <div class="hero__viewport" id="heroViewport">
+    <div class="slides" id="slides" style="transform:translateX(0%)" aria-live="off">
+
+      <!-- Slide 1 -->
+      <section class="slide" aria-roledescription="slide" aria-label="Slide 1">
+        <div class="slide__media" aria-hidden="true">
+          <picture>
+            <!-- WebP sources (preferred) -->
+            <source type="image/webp" srcset="
+              https://picsum.photos/id/1018/800/450.webp 800w,
+              https://picsum.photos/id/1018/1400/788.webp 1400w,
+              https://picsum.photos/id/1018/2200/1235.webp 2200w" sizes="(max-width:600px) 100vw, (max-width:1200px) 80vw, 1400px">
+            <!-- Fallback/jpeg -->
+            <img src="https://picsum.photos/id/1018/1400/788.jpg"
+                 srcset="https://picsum.photos/id/1018/800/450.jpg 800w, https://picsum.photos/id/1018/1400/788.jpg 1400w, https://picsum.photos/id/1018/2200/1235.jpg 2200w"
+                 sizes="(max-width:600px) 100vw, (max-width:1200px) 80vw, 1400px"
+                 alt="Solar production line" loading="lazy">
+          </picture>
+        </div>
+
+        <div class="slide__content">
+          <h2 class="h-title">Power your future with solar manufacturing</h2>
+          <p class="h-sub">End-to-end PV & battery production — scalable, efficient, certified.</p>
+          <a class="btn" href="#learn">Learn more</a>
+        </div>
+      </section>
+
+      <!-- Slide 2 -->
+      <section class="slide" aria-roledescription="slide" aria-label="Slide 2">
+        <div class="slide__media" aria-hidden="true">
+          <picture>
+            <source type="image/webp" srcset="
+              https://picsum.photos/id/1003/800/450.webp 800w,
+              https://picsum.photos/id/1003/1400/788.webp 1400w,
+              https://picsum.photos/id/1003/2200/1235.webp 2200w" sizes="(max-width:600px) 100vw, (max-width:1200px) 80vw, 1400px">
+            <img src="https://picsum.photos/id/1003/1400/788.jpg"
+                 srcset="https://picsum.photos/id/1003/800/450.jpg 800w, https://picsum.photos/id/1003/1400/788.jpg 1400w, https://picsum.photos/id/1003/2200/1235.jpg 2200w"
+                 sizes="(max-width:600px) 100vw, (max-width:1200px) 80vw, 1400px"
+                 alt="Testing lab" loading="lazy">
+          </picture>
+        </div>
+
+        <div class="slide__content">
+          <h2 class="h-title">Reliable testing for long-life panels</h2>
+          <p class="h-sub">Accelerated aging, IV curve, and thermal stress testing — all under one roof.</p>
+          <a class="btn" href="#tests">Our lab</a>
+        </div>
+      </section>
+
+      <!-- Slide 3 -->
+      <section class="slide" aria-roledescription="slide" aria-label="Slide 3">
+        <div class="slide__media" aria-hidden="true">
+          <picture>
+            <source type="image/webp" srcset="
+              https://picsum.photos/id/1040/800/450.webp 800w,
+              https://picsum.photos/id/1040/1400/788.webp 1400w,
+              https://picsum.photos/id/1040/2200/1235.webp 2200w" sizes="(max-width:600px) 100vw, (max-width:1200px) 80vw, 1400px">
+            <img src="https://picsum.photos/id/1040/1400/788.jpg"
+                 srcset="https://picsum.photos/id/1040/800/450.jpg 800w, https://picsum.photos/id/1040/1400/788.jpg 1400w, https://picsum.photos/id/1040/2200/1235.jpg 2200w"
+                 sizes="(max-width:600px) 100vw, (max-width:1200px) 80vw, 1400px"
+                 alt="Battery automation" loading="lazy">
+          </picture>
+        </div>
+
+        <div class="slide__content">
+          <h2 class="h-title">Automated battery assembly</h2>
+          <p class="h-sub">From cell sorting to final pack testing — industrial automation that scales.</p>
+          <a class="btn" href="#automation">See solutions</a>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <div class="controls" aria-hidden="false">
+    <button class="control-btn" id="prevBtn" aria-label="Previous slide">&larr;</button>
+    <button class="control-btn" id="nextBtn" aria-label="Next slide">&rarr;</button>
+  </div>
+
+  <!-- Indicators -->
+  <div class="indicators" role="tablist" aria-label="Slide indicators" id="indicators"></div>
+</div>
+
+<script>
+(function(){
+  const slidesEl = document.getElementById('slides');
+  const slideEls = Array.from(slidesEl.children);
+  const indicatorsContainer = document.getElementById('indicators');
+  const nextBtn = document.getElementById('nextBtn');
+  const prevBtn = document.getElementById('prevBtn');
+  const viewport = document.getElementById('heroViewport');
+
+  const conf = { autoplay:true, interval:4500, pauseOnHover:true, keyboard:true, startIndex:0, loop:true, touch:true };
+  let index = Math.min(conf.startIndex, slideEls.length-1);
+  let timer = null, startX=0, deltaX=0;
+
+  // create indicators
+  slideEls.forEach((s,i)=>{
+    const btn = document.createElement('button');
+    btn.className = 'dot';
+    btn.type='button';
+    btn.setAttribute('aria-pressed','false');
+    btn.setAttribute('aria-label', `Go to slide ${i+1}`);
+    btn.addEventListener('click', ()=> goTo(i));
+    indicatorsContainer.appendChild(btn);
+  });
+  const dots = Array.from(indicatorsContainer.children);
+
+  function render(){
+    slidesEl.style.transform = `translateX(-${index * 100}%)`;
+    dots.forEach((d,i)=> d.setAttribute('aria-pressed', String(i===index)));
+    slideEls.forEach((s,i)=> s.setAttribute('aria-hidden', String(i !== index)));
+  }
+
+  function next(){ index = (index + 1) % slideEls.length; render(); }
+  function prev(){ index = (index - 1 + slideEls.length) % slideEls.length; render(); }
+  function goTo(i){ index = (i + slideEls.length) % slideEls.length; render(); resetTimer(); }
+
+  function startTimer(){ if(conf.autoplay){ stopTimer(); timer = setInterval(next, conf.interval); } }
+  function stopTimer(){ if(timer){ clearInterval(timer); timer = null; } }
+  function resetTimer(){ stopTimer(); startTimer(); }
+
+  nextBtn.addEventListener('click', ()=>{ next(); resetTimer(); });
+  prevBtn.addEventListener('click', ()=>{ prev(); resetTimer(); });
+
+  if(conf.pauseOnHover){
+    viewport.addEventListener('mouseenter', ()=> stopTimer());
+    viewport.addEventListener('mouseleave', ()=> startTimer());
+  }
+
+  if(conf.keyboard){
+    window.addEventListener('keydown', (e)=>{
+      if(e.key === 'ArrowRight'){ next(); resetTimer(); }
+      if(e.key === 'ArrowLeft'){ prev(); resetTimer(); }
+    });
+  }
+
+  if(conf.touch){
+    viewport.addEventListener('touchstart', (e)=>{ startX = e.touches[0].clientX; deltaX = 0; stopTimer(); }, {passive:true});
+    viewport.addEventListener('touchmove', (e)=>{ deltaX = e.touches[0].clientX - startX; }, {passive:true});
+    viewport.addEventListener('touchend', ()=>{ if(Math.abs(deltaX) > 50){ deltaX < 0 ? next() : prev(); } startTimer(); });
+  }
+
+  // progressive preloading: load current + next image for smoother transitions
+  function preloadNearby(){
+    [index, (index+1)%slideEls.length].forEach(i => {
+      const img = slideEls[i].querySelector('img');
+      if(img && !img.dataset.preloaded){
+        const tmp = new Image();
+        tmp.src = img.currentSrc || img.src;
+        tmp.onload = ()=> img.dataset.preloaded = "1";
+      }
+    });
+  }
+
+  render();
+  preloadNearby();
+  startTimer();
+
+  // update preload on slide change
+  const observer = new MutationObserver(()=> preloadNearby());
+  observer.observe(slidesEl, { attributes: true, subtree: true });
+
+  // expose minimal API
+  window.__heroSlider = { next, prev, goTo, startTimer, stopTimer };
+
+})();
+</script>
+</body>
+</html>
+
+
+<!-- Slider -->
+<section class="slider slider-item w-100">
+<div class="item">
+<div class="hero-slider-1">
+<div class="overlay-side"></div>
+<div class="col-md-8 slider-caption text-center">
+<span class="text-white text-uppercase wow fadeInUp"> Turnkey Solutions <br> <color class="orange"> for  GW Scale </color><br>Solar PV Panel Production Lines</span>
+<p class="wow fadeInUp text-center">Few MWs of SemiAuto Lines to GW scale Fully Auto Production lines</p>
+
+<!-- <ul class="btn-list wow fadeInUp mt-4">
+<li class="list-inline-item"><a href="#" class="text-white font-weight-bold orange_btn">Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+</a></li>
+
+<li class="list-inline-item"><a href="#" class="text-white font-weight-bold green-btn">Contact Us <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+</a></li>
+
+</ul> -->
+</div>
+</div>
+</div>
+
+
+<div class="item">
+<div class="hero-slider-2">
+<div class="overlay-side"></div>
+<div class="col-md-8 slider-caption text-center">
+<span class="text-white text-uppercase wow fadeInUp"> Lets Go <color class="orange">Lithium  </color> <br> </span>
+<p class="wow fadeInUp text-center">Technology Solutions for Li Cells & Battery Pack Production Lines</p>
+
+<!-- <ul class="btn-list wow fadeInUp mt-4">
+<li class="list-inline-item"><a href="#" class="text-white font-weight-bold orange_btn">Contact Us <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+</a></li>
+
+<li class="list-inline-item"><a href="#" class="text-white font-weight-bold green-btn">Contact Us <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+</a></li>
+
+</ul> -->
+</div>
+</div>
+</div>
+
+
+<div class="item">
+<div class="hero-slider-4">
+<div class="overlay-side"></div>
+<div class="col-md-8 slider-caption text-center">
+<span class="text-white text-uppercase wow fadeInUp"> Lets Drive  <color class="orange"> The Future </color>   </span>
+<p class="wow fadeInUp text-center"> Emobility & Electric Infrastructure Solutions</p>
+
+
+
+<!-- <ul class="btn-list wow fadeInUp mt-4">
+<li class="list-inline-item"><a href="#" class="text-white font-weight-bold orange_btn">Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+</a></li>
+
+<li class="list-inline-item"><a href="#" class="text-white font-weight-bold green-btn">Contact Us <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+</a></li>
+
+</ul> -->
+</div>
+</div>
+</div>
+
+
+<div class="item">
+<div class="hero-slider-5">
+<div class="overlay-side"></div>
+
+<div class="col-md-8 slider-caption text-center">
+<span class="text-white text-uppercase wow fadeInUp"><color class="orange"> Lithium Battery Separator <br> Production Lines</color></span>
+<p class="wow fadeInUp text-center">Turnkey Solutions for Li-BSF Production Lines</p>
+
+<!-- <ul class="btn-list wow fadeInUp mt-4">
+<li class="list-inline-item"><a href="#" class="text-white font-weight-bold orange_btn">Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+</a></li>
+
+<li class="list-inline-item"><a href="#" class="text-white font-weight-bold green-btn">Contact Us <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+</a></li>
+
+</ul> -->
+</div>
+</div>
+</div>
+
+<!-- <div class="hero-slider">
+<div class="video-overlap">
+<video muted="" autoplay="" loop="loop" poster="/" playsinline="" id="vid">
+<source src="img/video.mp4" data-video="img/video.mp4" class="w-100" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
+</div> -->
+</section>
