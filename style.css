@@ -311,7 +311,7 @@ ul.dropdown-menu li:hover {    background: #8ec649;}
 .under-border-div {    border: 1px solid #ccc;  border-radius: 50px;     width: 100px; height: 100px;     margin: 0px auto;}
 .under-border-div img {    width: 55%;    position: relative;    top: 22px;}
 .under-border-div:hover {background-color: #8ec649;}
-.why-choose-area{background: url(img/bg-img.jpg)no-repeat; background-attachment: fixed; background-size: cover;}
+.why-choose-area{background: url(img/banner-1-1.png)no-repeat; background-attachment: fixed; background-size: cover;}
 p.text-block {    color: #ffffff;}
 /*.btn-box ul li {    width: 47%;}*/
 /*.orange-color {    padding: 100px 25px !important;}
