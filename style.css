@@ -1822,10 +1822,10 @@ color.orange{color: #ff8042;}
 }
 
 .new-contact-section{padding:36px;display:flex;justify-content:center;}
-.new-contact-wrap{max-width:1180px;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:28px;border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,0.04);background:#0b0b0b;padding:28px}
+.new-contact-wrap{max-width:1180px;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:28px;border-radius:12px;border:1px solid rgba(255,255,255,0.04);background:#0b0b0b;padding:28px}
 
 /* left column */
-.new-info{padding:6px 20px;color:#fff}
+.new-info{padding:6px 20px;color:#fff;overflow:hidden;}
 .new-brand{display:flex;gap:14px;align-items:center;margin-bottom:8px}
 .new-logo{width:56px;height:56px;border-radius:10px;background:#82c85c;display:grid;place-items:center;color:#061205;margin-bottom: 10px; font-weight:800}
 .new-h3{font-size:20px;margin:0 0 6px}
