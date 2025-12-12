@@ -1,117 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Solar Icon Grid</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: url('https://i.imgur.com/0Q7f4He.jpg') no-repeat center center/cover;
-  }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neon Outline Text</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000; /* Dark background for neon effect */
 
-  .icon-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
-    max-width: 1200px;
-    margin: 100px auto;
-    padding: 0 20px;
-  }
-
-  .icon-item {
-    position: relative;
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 20px;
-    text-align: center;
-    padding: 30px 20px;
-    color: white;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    border: 2px solid rgba(255, 255, 255, 0.5);
-  }
-
-  /* popup hover effect */
-  .icon-item:hover {
-    transform: translateY(-15px) scale(1.1);
-    background: rgba(130, 200, 92, 0.8);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-    border-color: white;
-  }
-
-  .icon-item img {
-    width: 70px;
-    height: 70px;
-    margin-bottom: 15px;
-    transition: transform 0.3s ease;
-  }
-
-  .icon-item:hover img {
-    transform: scale(1.2);
-  }
-
-  .icon-item p {
-    margin: 0;
-    font-weight: bold;
-    font-size: 14px;
-  }
-
-  @media (max-width: 900px) {
-    .icon-grid {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 30px;
     }
-  }
+    .animation-text p {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 900;
+      font-size: 70px;
+      line-height: 70px;
+      text-transform: uppercase;
+      text-align: center;
 
-  @media (max-width: 500px) {
-    .icon-grid {
-      grid-template-columns: 1fr;
-      gap: 20px;
+      /* Transparent fill */
+      color: transparent;
+
+      /* Neon green outline */
+      -webkit-text-stroke: 1px #39ff14;
+
+      /* Optional: subtle glow */
+      text-shadow: 0 0 2px #39ff14;
+
+      /* Keep smoke background animation if needed */
+      background: url(img/smoke.png);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: masked-animation 10s linear infinite;
     }
-  }
-</style>
+
+    @keyframes masked-animation {
+      0% { background-position: 50% 35%; }
+      50% { background-position: 50% 65%; }
+      100% { background-position: 50% 35%; }
+    }
+  </style>
 </head>
 <body>
-
-<div class="icon-grid">
-  <div class="icon-item">
-    <img src="https://img.icons8.com/ios-filled/100/ffffff/blueprint.png" alt="Concept Discussion">
-    <p>Concept Discussion</p>
-  </div>
-  <div class="icon-item">
-    <img src="https://img.icons8.com/ios-filled/100/ffffff/settings.png" alt="Recommendation & Configuration">
-    <p>Recommendation & Configuration</p>
-  </div>
-  <div class="icon-item">
-    <img src="https://img.icons8.com/ios-filled/100/ffffff/factory.png" alt="Factory Visit">
-    <p>Factory Visit</p>
-  </div>
-  <div class="icon-item">
-    <img src="https://img.icons8.com/ios-filled/100/ffffff/contract.png" alt="Estimation & Negotiations">
-    <p>Estimation & Negotiations</p>
-  </div>
-   <!-- ✅ FIXED: DOCUMENTATION ICON -->
-  <div class="icon-item">
-    <img src="https://img.icons8.com/ios-filled/100/ffffff/document.png" alt="Documentation">
-    <p>Documentation</p>
-  </div>
-
- <div class="icon-item">
-  <img src="https://img.icons8.com/ios-filled/100/ffffff/industrial-scales.png" alt="Production">
-  <p>Production</p>
-</div>
-
-  <div class="icon-item">
-    <img src="https://img.icons8.com/ios-filled/100/ffffff/engineer.png" alt="Installation">
-    <p>Installation</p>
-  </div>
-  <div class="icon-item">
-    <img src="https://img.icons8.com/ios-filled/100/ffffff/customer-support.png" alt="Support">
-    <p>Support</p>
-  </div>
-</div>
-
+  <section class="animation-text text-center d-block w-100 py-5">
+    <p>ECOTEK SOLUTIONS</p>
+  </section>
 </body>
 </html>

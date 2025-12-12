@@ -76,7 +76,7 @@ to {text-shadow: 0 0 20px #f3fffd, 0 0 30px #f3fffd , 0 0 40px #f3fffd , 0 0 50p
 }
 /* Working Process section */
 
-.animation-text p {    background: url(img/smoke.jpg);    font-family: "Montserrat", sans-serif;    -webkit-background-clip: text;    -webkit-text-fill-color: transparent;    animation-iteration-count: infinite;    font-weight: 900;    font-size: 70px;    line-height: 58px;    text-transform: uppercase;    -webkit-background-clip: text;    -webkit-text-fill-color: transparent;    -webkit-animation-name: masked-animation;    animation-name: masked-animation;    -webkit-animation-duration: 10s;    animation-duration: 10s;    -webkit-animation-iteration-count: infinite;    animation-iteration-count: infinite;    -webkit-animation-timing-function: linear;    animation-timing-function: linear;    -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #000); text-align: center;}
+.animation-text p {    background: url(img/smoke.png);    font-family: "Montserrat", sans-serif;    -webkit-background-clip: text;    -webkit-text-fill-color: transparent;    animation-iteration-count: infinite;    font-weight: 900;    font-size: 70px;    line-height: 58px;    text-transform: uppercase;    -webkit-background-clip: text;    -webkit-text-fill-color: transparent;    -webkit-animation-name: masked-animation;    animation-name: masked-animation;    -webkit-animation-duration: 10s;    animation-duration: 10s;    -webkit-animation-iteration-count: infinite;    animation-iteration-count: infinite;    -webkit-animation-timing-function: linear;    animation-timing-function: linear;    -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #000); text-align: center;}
 @keyframes masked-animation {
 0% { background-position: 50% 35%;}
 50% {background-position: 50% 65%;}
@@ -618,7 +618,7 @@ color.orange{color: #ff8042;}
       transition: 0.3s ease;
     }
     .btn-custom:hover {
-      background: linear-gradient(135deg, #8ec649, #589310);
+      background: linear-gradient(135deg, #000, #1e1e1e);
       color: #fff;
       transform: scale(1.05);
     }
@@ -896,21 +896,21 @@ color.orange{color: #ff8042;}
     .btn-custom {
       border-radius: 50px;
       padding: 8px 10px;
-      background: linear-gradient(135deg, #ff7e5f, #feb47b);
+      background: linear-gradient(135deg, #8ec649, #589310);
       color: #fff;
       font-weight: 600;
       border: none;
       transition: 0.3s ease;
     }
     .btn-custom:hover {
-      background: linear-gradient(135deg, #feb47b, #ff7e5f);
+      background: linear-gradient(135deg, #000, #1e1e1e);
       color: #fff;
       transform: scale(1.05);
     }
     .btn-customus {
       border-radius: 50px;
       padding: 8px 10px;
-      background: linear-gradient(135deg, #ff7e5f, #feb47b);
+      background: linear-gradient(135deg, #8ec649, #589310);
       color: #fff;
       font-weight: 600;
       border: none;
@@ -918,7 +918,7 @@ color.orange{color: #ff8042;}
       width: 100%;
     }
     .btn-customus:hover {
-      background: linear-gradient(135deg, #feb47b, #ff7e5f);
+      background: linear-gradient(135deg, #000, #1e1e1e);
       color: #fff;
       transform: scale(1.05);
     }
@@ -1724,7 +1724,7 @@ color.orange{color: #ff8042;}
   .slide__content {position:relative; z-index:2; max-width:760px; margin-bottom:clamp(12px, 3vh, 48px)}
   .h-title {font-size:clamp(1.5rem, 3.6vw, 3rem); margin:0 0 .4rem; line-height:1.03}
   .h-sub {font-size:clamp(.92rem, 1.6vw, 1.15rem); margin:0 0 1rem; opacity:.95}
-  .btn {display:inline-block; padding:.65rem 1rem; border-radius:10px; background:#ff7a18; color:white; text-decoration:none; font-weight:600}
+  .btn {display:inline-block; padding:.65rem 1rem; border-radius:10px; background:#82c85c; color:white; text-decoration:none; font-weight:600}
   /* controls */
   .controls {position:absolute; top:50%; transform:translateY(-50%); width:100%; display:flex; justify-content:space-between; z-index:3; pointer-events:none}
   .control-btn {pointer-events:auto; background:rgba(0,0,0,.36); border:0; color:white; width:44px; height:44px; border-radius:8px; display:flex; align-items:center; justify-content:center; margin:0 8px; cursor:pointer}
@@ -1857,7 +1857,7 @@ textarea{min-height:160px;resize:vertical}
 
 /* actions */
 .new-actions{display:flex;align-items:center;justify-content:space-between;gap:12px}
-.btn{padding:14px 26px;border-radius:10px;border:none;cursor:pointer;font-weight:700}
+.btn{border-radius:10px;border:none;cursor:pointer;font-weight:700}
 .btn-primary{background:#82c85c;color:#fff}
 .btn-primary:hover{background:#fff;color:#82c85c}
 .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:#fff}
