@@ -27,7 +27,7 @@ b{font-family: arial; }
 
 .fennec-nav .navbar .navbar-nav .nav-item a:hover {color: #8ec649;}
 .fennec-nav .navbar .navbar-nav .nav-item a:hover::before, .fennec-nav .navbar .navbar-nav .nav-item a:focus::before, .fennec-nav .navbar .navbar-nav .nav-item a.active::before {  opacity: 1;  visibility: visible;}
-.fennec-nav .navbar .navbar-nav .nav-item .dropdown-menu {  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);   background: #255dba;  position: absolute;  border: none;  top: 80px;  left: 0;  width: 280px;  z-index: 99;  display: block;  opacity: 0;  visibility: hidden;  border-radius: 0;  -webkit-transition: all 0.3s ease-in-out;  transition: all 0.3s ease-in-out; }
+.fennec-nav .navbar .navbar-nav .nav-item .dropdown-menu {  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);   background: #1e1e1e;  position: absolute;  border: none;  top: 80px;  left: 0;  width: 280px;  z-index: 99;  display: block;  opacity: 0;  visibility: hidden;  border-radius: 0;  -webkit-transition: all 0.3s ease-in-out;  transition: all 0.3s ease-in-out; }
 .fennec-nav .navbar .navbar-nav .nav-item .dropdown-menu li{background-position: 0% 50%;  padding-left: 12px;}
 .fennec-nav .navbar .navbar-nav .nav-item .dropdown-menu li a {  text-transform: capitalize;  padding: 5px 0px;  display: block;  color: #fff;  margin-top: 6px;  font-size: 15px;  font-weight: 600; letter-spacing: 1.5px;}
 .fennec-nav .navbar .navbar-nav .nav-item .dropdown-menu li a::before {  display: none;}
@@ -2050,4 +2050,9 @@ textarea{min-height:160px;resize:vertical}
       grid-template-columns: 1fr;
       gap: 20px;
     }
+  }
+  .mainform
+  {
+    width: 100%;
+    display: flex;
   }
