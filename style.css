@@ -222,7 +222,7 @@ footer{background: url(img/h8_shape.png)no-repeat; position: relative; }
 .information_side-widget ul li img {    width: 25px;}
 .information_side-widget ul li a {    font-size: 20px; color: #0c599f;}
 .quick_links ul li {    line-height: 33px;}
-.copy-right{background: #023d72;}
+.copy-right{background: #5dab46;}
 
 /* Send Enquire */
 .enquiry{position: fixed;    z-index: 1000;    bottom: 170px;    left: 20px;    height: 50px;   color: #fff;   font-size: 18px;    text-align: center;    text-decoration: none;    cursor: pointer;}
@@ -521,6 +521,7 @@ nav.navbar.navbar-expand-md.navbar-light.mobile-menu {    display: none;}
 .sub-head-abt
 {
     font-size: 30px;
+    color: #82c85c;
 }
 .abt-core
 {
@@ -542,6 +543,10 @@ nav.navbar.navbar-expand-md.navbar-light.mobile-menu {    display: none;}
     flex-direction: row-reverse;
     align-items: center;
 }
+.about_us-content p
+{
+  color: whitesmoke;
+}
 .abt-points
 {
     display: flex;
@@ -560,6 +565,7 @@ nav.navbar.navbar-expand-md.navbar-light.mobile-menu {    display: none;}
   margin-bottom: 10px;
   font-size: 16px;
   line-height: 1.6;
+  color: whitesmoke;
 }
 
 .custom-bullets li::before {
@@ -574,6 +580,7 @@ nav.navbar.navbar-expand-md.navbar-light.mobile-menu {    display: none;}
 .mini-text
 {
     font-size: 18px;
+    color: #82c85c;
 }
 .section-title h5 {    font-size: 42px;    margin-bottom: 15px;}
 .sec-title h4 {    font-size: 42px;    margin-bottom: 15px;}
@@ -2002,7 +2009,6 @@ textarea{min-height:160px;resize:vertical}
     padding: 30px 20px;
     color: white;
     transition: all 0.3s ease;
-    cursor: pointer;
     border: 2px solid rgba(255, 255, 255, 0.5);
   }
 
