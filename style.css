@@ -15,10 +15,10 @@ input{ font-family: arial; }
 textarea{ font-family: arial; }
 b{font-family: arial; }
 /*Css*/
-.top-header{background: #fff; position: relative;}
+.top-header{background: #000; border-bottom: 1px solid white; position: relative;}
 .right-side-orange{position: relative;}
 .right-side-orange::after {    position: absolute;    width: 24%;    height: 40px;    background: #8ec649;    content: '';    left: 0px;   top: -8px;}
-.welcome_side li{border-right: 1px solid #2a65c7;}
+.welcome_side li{border-right: 1px solid #fff;}
 .welcome_side span{font-family: gothic;}
 
 .fennec-mobile-nav .navbar-nav {  overflow-y: auto;  height: 428px;}
