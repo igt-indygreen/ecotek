@@ -377,6 +377,7 @@ ul.coloring {   text-align: center;}
 .hvr-radial-out:hover, .hvr-radial-out:focus, .hvr-radial-out:active {  color: white;}
 .hvr-radial-out:hover:before, .hvr-radial-out:focus:before, .hvr-radial-out:active:before {  -webkit-transform: scale(2);  transform: scale(2);}
 .black-color {    background: #000;}
+.white-color {    background: #fff;}
 .sitema-links-item h2 {    font-size: 25px;}
 .sitema-links-item h3 {    font-size: 25px;}
 .sitema-links-item h4 {    font-size: 25px;}
