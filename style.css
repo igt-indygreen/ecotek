@@ -1847,7 +1847,7 @@ color.orange{color: #ff8042;}
 
 /* right column (form) */
 .new-form{padding:6px 10px}
-form{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+form{display:block;grid-template-columns:1fr 1fr;gap:18px}
 .new-full{grid-column:1/-1}
 .new-full .new-new-input option
 {
